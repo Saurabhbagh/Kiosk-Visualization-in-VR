@@ -19,8 +19,8 @@ public class Cart : MonoBehaviour
     {
        
             DisplayID= cart.list.Find(e => e.ID == ID).ID;
-            DisplayName =cart.list.Find(e => e.Name == nametag).Name;
-            DisplayPrice=cart.list.Find(e => e.Name == nametag).Price;
+            DisplayName =cart.list.Find(e => e.ID == ID).Name;
+            DisplayPrice=cart.list.Find(e => e.ID == ID).Price;
             Sum = 0;//Sum + DisplayPrice;
             DisplayCartData(DisplayID,DisplayName, DisplayPrice);
                

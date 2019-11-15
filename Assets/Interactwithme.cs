@@ -3,27 +3,29 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Interactwithme : MonoBehaviour
-{
-    // Start is called before the first frame update
+{    
+    public GameObject keepobject;
 
-    public GameObject keepobject= GameObject.Find("KeepItem");
-
-
-
+    public GameObject clone;
+    public Cart find;
     void Start()
     {
-        
+    keepobject = GameObject.Find("Movetoward");
+   
     }
     void OnMouseDown()
-    {        
-            
-    }
-    // Update is called once per frame
-
-    // TO add the Steam VR Interaction 
-
-    void Update()
     {
+        Cart find = GameObject.Find("Kiosk").GetComponent<Cart>();
+        clone =Instantiate(this.gameObject);
         
+        clone.transform.position = keepobject.transform.position+ new Vector3(0,0.5f,0);
+        Debug.Log("Chcekcing"+this.GetComponent<definevalues>().nametag);
+        find.Search(this.GetComponent<definevalues>().nametag, this.GetComponent<definevalues>().ID);
+        Destroy(clone.gameObject,1.0f);
+
+
+
     }
+       
+    
 }

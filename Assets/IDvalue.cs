@@ -24,7 +24,7 @@ public class IDvalue
         get;
         set;
     }
-
+   
     public IDvalue(int Id, float price, string Nametag)
     {
 

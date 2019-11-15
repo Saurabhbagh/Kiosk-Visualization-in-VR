@@ -24,14 +24,14 @@ public class ListGenerate : MonoBehaviour
         foreach (Transform child in transform)
         {
             count = count + 1;
-            Debug.Log("Count is " + count);
-            Debug.Log("name is " + child.name);
+            //Debug.Log("Count is " + count);
+            //Debug.Log("name is " + child.name);
             definevalues obj = child.GetComponent<definevalues>();
             //tostore.ID = obj.ID;
             //tostore.Name = child.name;
             //tostore.Price = obj.price;
             materiallist.Add(count);
-            list.Add(new IDvalue(obj.ID, obj.price, child.name));
+            list.Add(new IDvalue(obj.ID, obj.price, obj.name));
             Debug.Log("Elements in the list  " + list.Count);
         }
         

@@ -1,4 +1,4 @@
-# Kiosk PysCurio 
+# Kiosk-Visualization in VR
 
 Now in VR.You can choose items from the kiosk and that will be added to their basket and they will get a live  view of your bill and the amount that you have to pay. 
 

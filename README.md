@@ -1,9 +1,9 @@
 # Kiosk-Visualization in VR
 
-Now in VR.You can choose items from the kiosk and that will be added to their basket and they will get a live  view of your bill and the amount that you have to pay. 
+Now in VR.Users can choose items from the kiosk and that will be added to their basket and they will get a live  view of their bill and the amount that they have to pay. 
 
 
-You can add in the items you want to sell and add the scripts defineme and interactwithme. Then you are good to go. 
+They can add in the items they want to sell and add the scripts defineme and interactwithme. Then they are good to go. 
 
 # Core implementation :
          Lists
